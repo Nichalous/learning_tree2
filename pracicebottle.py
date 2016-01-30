@@ -29,15 +29,12 @@ def furture(path):
 			abort(403, "getthouhence!")
 
 		if path == '':
-				path = "index2.html"
+				path = 'index.html'
 
-		if not path in ("", "cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
+		if not path in ("cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
 				abort(404, "filenotfound")
 
-		if path == "":
-				path = "index.html"
-
-			return static_file (path, root = "/blackport")
+		return static_file (path, root = "/blackport")
 
 
 
