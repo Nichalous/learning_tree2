@@ -10,13 +10,13 @@ import subprocess
 ##add error403.html
 @error(403)
 def ediquite(response):
-	return static_file("error403.html", root = "/blackport)
+	return static_file("error403.html", root = "/home/nick/projects/blackport)
 
 
 ##add error404.html
 @error(404)
 def adiquite(response):
-			return static_file("error404.html", root ="/blackport")
+			return static_file("error404.html", root ="/home/nick/projects/blackport")
 
 		##include existing possible files so if a case arrises where a file not existing, you get directed to my 404.html
 
@@ -34,7 +34,7 @@ def furture(path):
 		if not path in ("cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
 				abort(404, "filenotfound")
 
-		return static_file (path, root = "/blackport")
+		return static_file (path, root = "/home/nick/projects/blackport")
 
 
 
