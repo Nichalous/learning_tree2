@@ -25,10 +25,10 @@ def adiquite(response):
 def furture(path):
 		##allow only certain addresses accsess
 
-		if not path in(127.0.0.1, 10.255.0.67, 10.255.0.69, 10.255.0.70., int('')
+		if not request.src in ('127.0.0.1', '10.255.0.67', '10.255.0.69', '10.255.0.70')
 			abort(403, "getthouhence!")
 
-		if path == int(''):
+		if path == '':
 				path = "index2.html"
 
 		if not path in ("", "cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
