@@ -1,14 +1,11 @@
 ##trying to encrypt this and send it to you...
 ##just gonna do it with thunderbird
 
-##[nick@loopytunes /]$ sudo gpg -r Nichalous James Gibbons --encrypt /blackport/MK_n
+## remember to use -a for ascii output so it doesn't scramble your terminal with garbage
+##[nick@loopytunes /]$ sudo gpg - -r Nichalous James Gibbons --encrypt /blackport/MK_n
 
 from bottle import run, route, static_file, abort, error, response
 import subprocess
-
-#@ host bluelabs route blackport/MK_n
-#-insert python for request for credentials
-#-call for asana user and pass
 
 """
 def signin(user, password):
