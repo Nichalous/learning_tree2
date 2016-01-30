@@ -23,6 +23,10 @@ def entry(nick, david)
 		print ("Hey Welcome to my page!!")
 		print ("<img> source = /batrang")
 """
+@error(403)
+def ok(response):
+	return static_file("error403.html", root = "/blackport")
+
 @error(404)
 def ok(response):
 	return static_file("error404.html", root = "/blackport")
