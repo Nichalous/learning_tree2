@@ -38,7 +38,10 @@ def furture(path):
 				path = "index.html"
 
 			return static_file (path, root = "/blackport")
-
-
+##anything
+@figgy(127)
+def color(hot):
+	return static_file("filter.html, root = /blackport")
+	##add filter.html sicky
 
 run(host = 10.255.0.67, port = 1069, debug = True)
