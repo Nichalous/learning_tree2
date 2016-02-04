@@ -10,13 +10,13 @@ import subprocess
 ##add error403.html
 @error(403)
 def ediquite(response):
-	return static_file("error403.html", root = "/blackport)
+	return static_file("error403.html", root = "/home/nick/projects/blackport)
 
 
 ##add error404.html
 @error(404)
 def adiquite(response):
-			return static_file("error404.html", root ="/blackport")
+			return static_file("error404.html", root ="/home/nick/projects/blackport")
 
 		##include existing possible files so if a case arrises where a file not existing, you get directed to my 404.html
 
@@ -29,11 +29,12 @@ def furture(path):
 			abort(403, "getthouhence!")
 
 		if path == '':
-				path = "index2.html"
+				path = 'index.html'
 
-		if not path in ("", "cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
+		if not path in ("cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
 				abort(404, "filenotfound")
 
+<<<<<<< HEAD
 		if path == "":
 				path = "index.html"
 
@@ -43,5 +44,10 @@ def furture(path):
 def color(hot):
 	return static_file("filter.html, root = /blackport")
 	##add filter.html sicky
+=======
+		return static_file (path, root = "/home/nick/projects/blackport")
+
+
+>>>>>>> 49f11f9d8ce59567c1aa808922440aa00d964502
 
 run(host = 10.255.0.67, port = 1069, debug = True)
