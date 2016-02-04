@@ -7,26 +7,31 @@
 from bottle import Bottle, route, run, static_file, abort, error, response, request, hook
 import subprocess, string
 
-document_root = '/home/nick/projects/blackport'
-server_ip     = '10.255.0.67'
+# change to True when running on loopy, False when running on scott
+if False:
+   server_ip     = '10.255.0.70'
+   document_root = '/home/nick/projects/blackport'
+else:
+   document_root = '/tmp/learning_tree2/blackport'
+   server_ip     = '10.255.0.70'
 
 ##add error403.html
 @error(403)
 def ediquite(response):
-	return static_file("error403.html", root = document_root)
+	return static_file("error403.html", root=document_root)
 
 
 ##add error404.html
 @error(404)
 def adiquite(response):
-	return static_file("error404.html", root =document_root)
+	return static_file("error404.html", root=document_root)
 
 	##include existing possible files so if a case arrises where a file not existing, you get directed to my 404.html
 
 @hook('before_request')
 def start_session():
-	request.src = request.environ.get('REMOTE_ADDR')
-	if not request.src in ('127.0.0.1', '10.255.0.67', '10.255.0.69', '10.255.0.70'):
+	src = request.environ.get('REMOTE_ADDR')
+	if not src in ('127.0.0.1', '10.255.0.67', '10.255.0.69', '10.255.0.70'):
 		abort(403, "getthouhence!")
 
 @route('/lsofdatthang')
@@ -43,7 +48,7 @@ def lsofdatthang():
 	# now use enumerate() around the list of data[] to give us a line number+line...
 	# IF that line has the word 'prey' in it, and store the generated list in a
 	# new variable called ws
-	ws = [(n,x) for n,x in enumerate(data) if 'prey' in x]
+	ws = [(n,x) for n,x in enumerate(data) if '.vpn' in x]
 
 	# prepare our data for the HTML template
 	webfoo = []
@@ -56,14 +61,15 @@ def lsofdatthang():
 	pgmdata = '\n'.join(webfoo)
 
 	# build a web page of this data
-	html = '''
-	<!DOCTYPE html>
-	<html>
+	html = '''\
+<!DOCTYPE html>
+<html lang='en-US'>
 	<head>
-     <title "lsof dat thang!" />
+     <title>lsof dat thang!</title>
    </head>
 
    <body>
+     <p>lsof output:</p>
      <table>
        <tbody>
          ${pgmdata}
@@ -96,6 +102,6 @@ def future(path):
 	if path == "":
 		path = "index.html"
 
-	return static_file (path, root = document_root)
+	return static_file (path, root=document_root)
 
-run(host = server_ip, port = 1069, debug = True)
+run(host=server_ip, port=1069, debug=True)
