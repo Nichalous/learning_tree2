@@ -16,38 +16,27 @@ def ediquite(response):
 ##add error404.html
 @error(404)
 def adiquite(response):
-			return static_file("error404.html", root ="/home/nick/projects/blackport")
+	return static_file("error404.html", root ="/home/nick/projects/blackport")
 
-		##include existing possible files so if a case arrises where a file not existing, you get directed to my 404.html
+	##include existing possible files so if a case arrises where a file not existing, you get directed to my 404.html
 
 
 @route("/<path:re:.*>", method = "ANY")
 def furture(path):
-		##allow only certain addresses accsess
+	##allow only certain addresses accsess
 
-		if not request.src in ('127.0.0.1', '10.255.0.67', '10.255.0.69', '10.255.0.70'):
-			abort(403, "getthouhence!")
+	if not request.src in ('127.0.0.1', '10.255.0.67', '10.255.0.69', '10.255.0.70'):
+		abort(403, "getthouhence!")
 
-		if path == '':
-				path = 'index.html'
+	if path == '':
+		path = 'index.html'
 
-		if not path in ("cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
-				abort(404, "filenotfound")
+	if not path in ("cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
+		abort(404, "filenotfound")
 
-<<<<<<< HEAD
-		if path == "":
-				path = "index.html"
+	if path == "":
+		path = "index.html"
 
-			return static_file (path, root = "/blackport")
-##anything
-@figgy(127)
-def color(hot):
-	return static_file("filter.html, root = /blackport")
-	##add filter.html sicky
-=======
-		return static_file (path, root = "/home/nick/projects/blackport")
-
-
->>>>>>> 49f11f9d8ce59567c1aa808922440aa00d964502
+	return static_file (path, root = "/home/nick/projects/blackport")
 
 run(host = 10.255.0.67, port = 1069, debug = True)
