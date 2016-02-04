@@ -10,7 +10,7 @@ import subprocess
 ##add error403.html
 @error(403)
 def ediquite(response):
-	return static_file("error403.html", root = "/home/nick/projects/blackport)
+	return static_file("error403.html", root = "/home/nick/projects/blackport")
 
 
 ##add error404.html
