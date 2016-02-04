@@ -7,16 +7,19 @@
 from bottle import Bottle, route, run, static_file, abort, error, response, request, hook
 import subprocess, string
 
+document_root = '/home/nick/projects/blackport'
+server_ip     = '10.255.0.67'
+
 ##add error403.html
 @error(403)
 def ediquite(response):
-	return static_file("error403.html", root = "/home/nick/projects/blackport")
+	return static_file("error403.html", root = document_root)
 
 
 ##add error404.html
 @error(404)
 def adiquite(response):
-	return static_file("error404.html", root ="/home/nick/projects/blackport")
+	return static_file("error404.html", root =document_root)
 
 	##include existing possible files so if a case arrises where a file not existing, you get directed to my 404.html
 
@@ -93,6 +96,6 @@ def future(path):
 	if path == "":
 		path = "index.html"
 
-	return static_file (path, root = "/home/nick/projects/blackport")
+	return static_file (path, root = document_root)
 
-run(host = "10.255.0.67", port = 1069, debug = True)
+run(host = server_ip, port = 1069, debug = True)
