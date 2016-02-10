@@ -39,7 +39,7 @@ def future(path):
 
 	if path == '':
 		path = 'index.html'
-
+##printcheck
 	if not path in ("cube.jpg", "page2.html", "batarang.jpg", "index.html", "sunflower.jpg"):
 		abort(404, "filenotfound")
 
