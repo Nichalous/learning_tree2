@@ -8,9 +8,9 @@ from bottle import Bottle, route, run, static_file, abort, error, response, requ
 import subprocess, string
 
 # change to True when running on loopy, False when running on scott
-if False:
-   server_ip     = '10.255.0.70'
-   document_root = '/home/nick/projects/blackport'
+if True:
+   server_ip     = '10.255.0.67'
+   document_root = '/home/nick/projects/learning_tree2/blackport/html'
 else:
    document_root = '/tmp/learning_tree2/blackport'
    server_ip     = '10.255.0.70'
@@ -46,9 +46,8 @@ def lsofdatthang():
 	data = data.split('\n')
 
 	# now use enumerate() around the list of data[] to give us a line number+line...
-	# IF that line has the word 'prey' in it, and store the generated list in a
 	# new variable called ws
-	ws = [(n,x) for n,x in enumerate(data) if '.vpn' in x]
+	ws = [(n,x) for n,x in enumerate(data)]
 
 	# prepare our data for the HTML template
 	webfoo = []
