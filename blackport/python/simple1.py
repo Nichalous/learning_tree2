@@ -9,10 +9,10 @@ def index(name):
 
 	run(host='localhost, port=8080')
 """
-initial pages for simple assignment 1
+#initial pages for simple assignment 1
 from bottle import Bottle, route, run, static_file, abort, error, response
 import subprocess
- 
+
 app = Bottle()
 
 @app.route('/blackport/<pagename>')
@@ -20,7 +20,7 @@ def blackport():
 	if pagename == route('/blackport/wiekie'):
 		print("hey alex! hi CINDY! was up DJ")
 	elif pagename == route('/blackport/LGT'):
-		print("Was up Light Fam!!!") 
+		print("Was up Light Fam!!!")
 		print("<img> source = /desktop/buinessss/sunflower.jpg")
 		return
 
