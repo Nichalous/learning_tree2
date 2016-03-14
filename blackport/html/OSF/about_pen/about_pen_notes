@@ -36,7 +36,7 @@
 
       <p id ="parm"> New standard provide both buisiness and securiy service with a common language and scope for Security Evaluation.
 
-   <p id="stone"> Pre Engagement
+   <p id="stone"> Pre Engagement</p>
    ____________________________________________
 
                <p id="chx"> The Test should be about identifying the buisiness risk associated with an attack</p>
@@ -87,7 +87,7 @@ _________________________________________________
    <p id="stone"> Metadata Analysis</p>
 
       <p id="parm"> Looking at data that describes a file</p>
-         <p id="chx">-Author, Company, last save<br>
+         <p id="chx">Author, Company, Last Save<br>
          -Any metadatabase an attacker could gain access to passively <span id="emphasis">should</span> be considered a security issue</p>
 
       <p id="parm"> Traffic Monitoring</p>
