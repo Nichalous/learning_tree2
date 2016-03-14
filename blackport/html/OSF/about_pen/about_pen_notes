@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>BlueLabs Resource Information</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/css/dolphin.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Indie+Flower:b,i|Montserrat:b,i|Tangerine:b,i,bi|Inconsolata:b,i,bi"/>
+ </head>
+
+   <body>
+
+<div class="top-segment">
+
+   <div id="fixed-flex-items1">
+      <ul class="sticky-buttons">
+         <li>Place Order</li>
+         <li>Menu</li>
+         <li>Events</li>
+         <li> PBJT</li>
+         <li>Historia</li>
+         <li><input></input></li>
+      </ul>
+  </div>
+
+</div>
+
+<div id="classico">
+<img src="/images/classico.jpg" />
+</div>
+
 <h3 id="peanutbutter">Find And Learn Useful Tools</h3>
 <h2 id="jelly">High Level Orgainization of the (PTES) Standard
    <br> -Pen Test Execution Standard</h2>
@@ -133,4 +165,17 @@ __________________________________________________
          <p id=chx">scrambling data to hide what it is doing(also,obfuscation)</p>
 
 
-      <p id="parm"
+      <p id="parm">Whitelist</p>
+         <p id="chx"> Allow trusted software to run and protects against untrusted software</p>
+
+      <p id="parm">Bypass</p>
+         <p id="chx">Avoid getting a flag on whitelisting technologies</p>
+
+      <p id="parm">Process Injection</p>
+         <p id="chx">Where the process will be hidden, preferably in a trusted <span id="emphasis">Inconspicuous Location</span></p>
+__________________________________________________
+
+   </body>
+   </html>
+
+
