@@ -1,0 +1,136 @@
+<h3 id="peanutbutter">Find And Learn Useful Tools</h3>
+<h2 id="jelly">High Level Orgainization of the (PTES) Standard
+   <br> -Pen Test Execution Standard</h2>
+
+      <p id ="parm"> New standard provide both buisiness and securiy service with a common language and scope for Security Evaluation.
+
+   <p id="stone"> Pre Engagement
+   ____________________________________________
+
+               <p id="chx"> The Test should be about identifying the buisiness risk associated with an attack</p>
+
+   <p id="parm"> Scope</p>
+
+               <p id="chx">Specifically <span id="emphasis">defines</span> what is to be tested <br>
+                  -Outlining how the testers should spend their time <br>
+                  -Vary Costs based on work done</p>
+
+   <p id="parm"> UnchartedTerritory</p>
+               <p id="chx">"Tester is able to <span id="emphasis">serve as a guide"</span><br>
+                  -Tell the client what they need<br>
+                  A SHRUBBERY
+
+_________________________________________________
+
+<h3 id="jelly"> Vulnerability Analysis</h3>
+_________________________________________________
+
+   <p id="parm">Vulnerability Testing</p>
+
+               <p id="chx"> process of finding problems in systems and applications which can be comprimised by an attacker</p>
+
+   <p id="parm">Prevention</p>
+
+               <p id="chx"> Filter input and consider if the tool can be trusted <br>
+                  -encoding inputs<br>
+                  -VPN<br>
+                  -Build Framework<br>
+                  -Programs, interfaces, Tools necessary</p>
+
+   <p id="parm">Vulnerabilites</p>
+
+               <p id="chx"> Injection Flaws:</p>
+                  <p id="beef"> failure to filter untrusted input</p>
+               <p id="chx"> Broken Authentication:</p>
+                  <p id="beef"> Easy Password and user login verification <br>
+                  Cross Site SCripting: Clicking on Phissy adds or <span id="text_links">BLUELINKS</span><br>
+                  Insecure Direct object Reference:<br>
+                  Easy to find database keys</p>
+
+   ______________________________________________
+
+   <h3 id="jelly">Passive</h3>
+   ______________________________________________
+
+   <p id="stone"> Metadata Analysis</p>
+
+      <p id="parm"> Looking at data that describes a file</p>
+         <p id="chx">-Author, Company, last save<br>
+         -Any metadatabase an attacker could gain access to passively <span id="emphasis">should</span> be considered a security issue</p>
+
+      <p id="parm"> Traffic Monitoring</p>
+         <p id="chx">connecting to an <span id ="emphasis"> internal network</span> and getting data for offline analysis<br>
+         -Capturing Data on an internal network<br>
+         <span id ="text_link"> Assigning Private Network</span>
+
+      <p id="parm">OSI</p>
+         <p id="chx"> Open System Interconnection; <br>
+         Standard for worldwide communications that defines a <span id="emphasis">Networking Framework</span> for implementing protocols in 7 <span id="text_link"> layers</span></p>
+
+      <p id="parm">ARP</p>
+         <p id="chx"> Address Resolution Protocol:<br>
+         Network layer protocol converts an IP address into a physical DLC address</p>
+
+      <p id="parm">MAC</p>
+         <p id="chx> Media Access Control:<br>
+         a layer in Open System Interconnection responsible for movin data packets from one <span id ="emphasis">Network Interface Card</span o another across shared channel</p>
+
+      <p id="parm">Caching</p>
+         <p id ="chx">Practice of storeing data in and retrieving data from a high-performance storage</p>
+
+      <p id="parm">Cache Overflow</p>
+         <p id ="chx">"Bottle Necking" reaching or surpassing a data limit <br>
+         ex <span id="emphasis">ARP cache overflow:</span></p>
+            <p id="beef">exceeding capacity of the ARP table</p>
+
+      <p id="parm">Etherleak</p>
+         <p id ="chx">Device drivers incorrectly handle frame padding allowing attacker to view slices of previously transmitted packets</p>
+___________________________________________________
+
+<h3 id="jelly">Validation</h3>
+
+___________________________________________________
+<p id="stone"> Correlation Between Tools</p>
+      <p id="parm">Relates to a specific definable issue such as vulnerability</p>
+
+      <p id="parm>Exploit Databases</p>
+         <p id="chx> fFind exploit code to use against potentially vulnerable applications</p>
+
+      <p id="parm>Hardening Guides</p>
+         <p id="chx>Simulate the tactics of an attacker<br>
+         Hardening setting -see <span id="text_link>recomended tools</span>
+
+      <p id="parm>Private Research</p>
+         <p id=chx>Set up a replica enviorment<br>
+         -Virtual Machine enviorment and hack it<br>
+         <br>
+         Configure the test<br>
+         -VM should contain base images for all common OS<br>
+
+      <p id="parm">Fuzzing</p>
+         <p id="chx">Brute force technique for finding application flaws<br>
+         -Find fuzzing applications</p>
+            <p id="beef"> using a port to determine the OS of the remote device with an nmap seach based on the ips listed under itsypy.txt</p>
+__________________________________________________
+
+<h3 id="jelly">EXPloitation</h>
+
+__________________________________________________
+      <p id="parm"> Focuses on establishing access to a system resource by bypassing security restrictions<br>
+      -Well Planned precision strike<br>
+      -Main Point of entry<br>
+      -Target Assests</p>
+
+      <p id="parm">Countermeasures</p>
+         <p id="chx"> In the event of preventative technology you need <span id="emphasis">Plan B</span><br>
+         -countermeasures should be created before the attack<br>
+         -anonymity<br>
+         -practice attacks on VM<br>
+
+   <p id="stone">Recognizing Anti-Virus and countermeasures for PTES</p>
+
+      <p id="parm">Encoding</p>
+         <p id=chx">scrambling data to hide what it is doing(also,obfuscation)</p>
+
+
+      <p id="parm"
