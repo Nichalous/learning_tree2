@@ -165,7 +165,7 @@ def future(path):
     if path == '':
         path = 'index.html'
 
-    if not path in ("page2.html", "index.html", "nickspage.html", "commonsites.html","dolphin.html"):
+    if not path in ("page2.html", "index.html", "nickspage.html", "commonsites.html","dolphin.html","divpractice.html", "html.html", ):
         abort(404, "filenotfound")
 
     if path == "":

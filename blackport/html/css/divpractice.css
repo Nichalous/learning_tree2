@@ -1,0 +1,8 @@
+#yup{
+   display: inline-flex;
+   position: fixed;
+
+}
+div {
+   border: 2px solid #000000;
+}
