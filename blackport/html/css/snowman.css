@@ -17,7 +17,7 @@ img{
 	box-shadow: rgba(0,0,0,0.2) 10px 10px;
 }
 
-#peanutbutter {
+.peanutbutter {
 	font-family: Verdana;
 	font-weight: bold;
 	text-align: center;
@@ -28,21 +28,21 @@ img{
 
 }
 
-#jelly{
+.jelly{
 	font-size: 28;
 	color: purple;
 
 }
 
-#stone{
+.stone{
 	font-size: 24;
 	font-style: italic;
 }
 
-#parm{
+.parm{
 	font-size: 18;
 }
 
-#chx{
+.chx{
 	font-size: 16;
 }

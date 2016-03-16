@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ping of Death</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/css/dolphin.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Indie+Flower:b,i|Montserrat:b,i|Tangerine:b,i,bi|Inconsolata:b,i,bi"/>
+ </head>
+
+<body>
+ <table border="4">
+
+<thead> Vulnerability Anaylysis Table</thead>
+
+<tr>
+<td>Vulnerability</td>
+<td>About Vuln</td>
+<td>Risk</td>
+<td>Mapping</td>
+<td>Resolution</td>
+<td>Validation</td>
+<td>New Vocab</td>
+</tr>
+
+<tr>
+<td>Ping Of Death</td>
+<td>"Denial of Service Attack" Sending a signal to a device that is too strong for the device to handle,forcing a shutdown or restart <br/>
+-sending an illegal oversized ICMP packet with ping</td>
+<td class="risk">Moderate</td>
+<td>CVE-199-0128</td>
+<td>Update the operating system<br/>
+(descriptions.securescout.com/tc/11001)</td>
+<td>insecure.org/sploits/ping.html</td>
+<!--ping -l 655510 root@your.host.ip.address?-->
+<td> Denial of Service:<br/>
+<br/>
+ICMP<br/></td>
+
+</tr>
+
+</table>
+</html>
